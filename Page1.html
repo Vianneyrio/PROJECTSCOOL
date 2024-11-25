@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page de Présentation - Pigier Bénin</title>
+
+    <!-- Lien vers le fichier CSS de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABWzW9I1lRrTpWv1kXQ3d9TYBqMi1s8TzA3eF9fAKKntl9FQ7/2pK" crossorigin="anonymous">
+
+    <!-- Lien vers une police élégante (Google Fonts) -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background-color: #f7f9fc;
+        }
+
+        .header-logo img {
+            width: 100px;
+            height: auto;
+        }
+
+        .header-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .header-title {
+            text-align: center;
+            font-weight: bold;
+            font-size: 1.5rem;
+            color: black;
+        }
+
+        .profile-img {
+            max-width: 150px;
+            border-radius: 50%;
+            display: block;
+            margin: 20px auto;
+        }
+
+        .section-title {
+            color: #0044cc;
+        }
+
+        .card {
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(163, 6, 6, 0.1);
+        }
+
+        .card-body {
+            padding: 30px;
+        }
+
+        .card-header {
+            background-color: #0044cc;
+            color: white;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- En-tête avec logos et titre -->
+    <header class="bg-primary text-white py-3">
+        <div class="container">
+            <div class="header-container">
+                <!-- Logo gauche -->
+                <a href="https://www.pigierbenin.bj" target="_blank" class="header-logo">
+                    <img src="logo.jfif" alt="Logo Pigier">
+                </a>
+
+                <!-- Titre centré -->
+                <div class="header-title">Bienvenue sur mon site</div>
+
+                <!-- Logo droit -->
+                <a href="page2.html" class="header-logo">
+                    <img src="logo.jfif" alt="Logo Pigier">
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contenu principal -->
+    <div class="container my-5">
+        <div class="row justify-content-center">
+            <!-- Profil avec une carte élégante -->
+            <div class="col-md-8 col-lg-6">
+                <div class="card">
+                    <div class="card-header text-center">
+                        <h2 class="section-title">Informations personnelles</h2>
+                    </div>
+                    <div class="card-body">
+                        <p><strong>Nom:</strong> TOFFA HOUNNON</p>
+                        <p><strong>Prénom:</strong> Vianney</p>
+                        <p><strong>Filière:</strong> RGL (Réseaux et Génie Logiciel)</p>
+                        <p><strong>Contact:</strong> 94655998</p>
+                        <!-- Photo de profil -->
+                        <img src="vianney.jpg" alt="Ma photo" class="profile-img">
+
+                        <!-- Description -->
+                        <div class="mt-4">
+                            <h3>À propos de l'École Pigier Bénin</h3>
+                            <p>Pigier Bénin est une institution privée d'enseignement supérieur qui représente la franchise de la marque Pigier, fondée en France en 1850. Elle établit sa présence au Bénin en 1993 et a obtenu l'agrément de l'État béninois en 1997. Pigier Bénin offre des programmes de licence et de master professionnels dans les domaines des sciences de gestion et des technologies, couvrant un large éventail de spécialisations telles que le management, le commerce, l'administration des entreprises, la finance, le contrôle de gestion, la comptabilité, l'assistanat de direction, la gestion des ressources humaines et le placement des étudiants.Pigier Bénin est une école de formation professionnelle reconnue pour ses programmes de qualité. Elle offre des formations dans divers domaines comme le management, le marketing, la gestion des ressources humaines, etc. Je fais partie de la filière RGL, qui me prépare à devenir un expert en gestion et logistique.</p>
+
+                            <h3>À propos de la filière RGL</h3>
+                            <p>La filière RGL (Responsabilité de Gestion des Logistiques) permet d'acquérir des compétences pratiques dans le domaine de la gestion et de la logistique. Les étudiants y apprennent à gérer les ressources, à optimiser les processus et à organiser des systèmes logistiques dans des environnements professionnels diversifiés.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Lien vers le fichier JS de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pzjw8f+ua7Kw1TIq0VQjx7rMwLl4hdyHgB3y1A+9p7zRmBLz/ZWh0DK9tDpq14s7" crossorigin="anonymous"></script>
+</body>
+
+</html>

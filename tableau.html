@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liste des Admis - Pigier Bénin</title>
+
+    <!-- Lien vers le fichier CSS de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABWzW9I1lRrTpWv1kXQ3d9TYBqMi1s8TzA3eF9fAKKntl9FQ7/2pK" crossorigin="anonymous">
+
+    <style>
+        
+        .RMS{ background-color: #28a778 !important;
+            color: white;}
+        .RGL{
+            background-color: #28a745 !important;
+            color: white;
+        }
+        .status-admis {
+            background-color: #28a745 !important;
+            color: white;
+        }
+
+        .status-refuse {
+            background-color: #dc3545 !important;
+            color: white;
+        }
+
+        .status-engagement {
+            background-color: #ffc107 !important;
+            color: black;
+        }
+
+        .table {
+            margin-top: 60px;
+        }
+
+        th {
+            background-color: #0044cc;
+            color: white;
+        }
+
+        td {
+            vertical-align: middle;
+        }
+
+        .pagination {
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container my-5">
+        <h2 class="text-center mb-4">Liste des Admis - Pigier Bénin</h2>
+
+        <!-- Tableau des étudiants -->
+        <table class="table table-hover table-bordered">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Nom</th>
+                    <th>Prénom</th>
+                    <th>Contact</th>
+                    <th>Décision</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- 20 étudiants -->
+                <tr class="status-admis">
+                    <td>1</td>
+                    <td>John</td>
+                    <td>Doe</td>
+                    <td>+229 123 45 67</td>
+                    <td>Admis</td>
+                </tr>
+                <tr class="status-refuse">
+                    <td>2</td>
+                    <td>Jane</td>
+                    <td>Smith</td>
+                    <td>+229 234 56 78</td>
+                    <td>Refusé</td>
+                </tr>
+                <tr class="status-engagement">
+                    <td>3</td>
+                    <td>Ali</td>
+                    <td>Ouattara</td>
+                    <td>+229 345 67 89</td>
+                    <td>Engagement</td>
+                </tr>
+                <tr class="status-admis">
+                    <td>4</td>
+                    <td>Fatimah</td>
+                    <td>Keita</td>
+                    <td>+229 456 78 90</td>
+                    <td>Admis</td>
+                </tr>
+                <tr class="status-refuse">
+                    <td>5</td>
+                    <td>Marc</td>
+                    <td>Tougan</td>
+                    <td>+229 567 89 01</td>
+                    <td>Refusé</td>
+                </tr>
+                <tr class="status-admis">
+                    <td>6</td>
+                    <td>Oumar</td>
+                    <td>Diouf</td>
+                    <td>+229 678 90 12</td>
+                    <td>Admis</td>
+                </tr>
+                <tr class="status-engagement">
+                    <td>7</td>
+                    <td>Abiba</td>
+                    <td>Bamba</td>
+                    <td>+229 789 01 23</td>
+                    <td>Engagement</td>
+                </tr>
+                <tr class="status-refuse">
+                    <td>8</td>
+                    <td>Eric</td>
+                    <td>Kouadio</td>
+                    <td>+229 890 12 34</td>
+                    <td>Refusé</td>
+                </tr>
+                <tr class="status-admis">
+                    <td>9</td>
+                    <td>Aminata</td>
+                    <td>Cissé</td>
+                    <td>+229 901 23 45</td>
+                    <td>Admis</td>
+                </tr>
+                <tr class="status-engagement">
+                    <td>10</td>
+                    <td>Hamidou</td>
+                    <td>Toure</td>
+                    <td>+229 123 45 67</td>
+                    <td>Engagement</td>
+                </tr>
+                <tr class="status-admis">
+                    <td>11</td>
+                    <td>Isabelle</td>
+                    <td>Yeboah</td>
+                    <td>+229 234 56 78</td>
+                    <td>Admis</td>
+                </tr>
+                <tr class="status-refuse">
+                    <td>12</td>
+                    <td>Louis</td>
+                    <td>Doumbia</td>
+                    <td>+229 345 67 89</td>
+                    <td>Refusé</td>
+                </tr>
+                <tr class="status-admis">
+                    <td>13</td>
+                    <td>Monique</td>
+                    <td>Gnaré</td>
+                    <td>+229 456 78 90</td>
+                    <td>Admis</td>
+                </tr>
+                <tr class="status-engagement">
+                    <td>14</td>
+                    <td>Philippe</td>
+                    <td>Gbèssou</td>
+                    <td>+229 567 89 01</td>
+                    <td>Engagement</td>
+                </tr>
+                <tr class="status-refuse">
+                    <td>15</td>
+                    <td>Abdoulaye</td>
+                    <td>Thiam</td>
+                    <td>+229 678 90 12</td>
+                    <td>Refusé</td>
+                </tr>
+                <tr class="status-admis">
+                    <td>16</td>
+                    <td>Fadimata</td>
+                    <td>Sanogo</td>
+                    <td>+229 789 01 23</td>
+                    <td>Admis</td>
+                </tr>
+                <tr class="status-engagement">
+                    <td>17</td>
+                    <td>Moussa</td>
+                    <td>Balogun</td>
+                    <td>+229 890 12 34</td>
+                    <td>Engagement</td>
+                </tr>
+                <tr class="status-admis">
+                    <td>18</td>
+                    <td>Rachida</td>
+                    <td>Ouedraogo</td>
+                    <td>+229 901 23 45</td>
+                    <td>Admis</td>
+                </tr>
+                <tr class="status-refuse">
+                    <td>19</td>
+                    <td>Samuel</td>
+                    <td>Bouba</td>
+                    <td>+229 123 45 67</td>
+                    <td>Refusé</td>
+                </tr>
+                <tr class="status-admis">
+                    <td>20</td>
+                    <td>Fanta</td>
+                    <td>Sidibé</td>
+                    <td>+229 234 56 78</td>
+                    <td>Admis</td>
+                </tr>
+            
+
+        
+                <tr>
+                    <td rowspan="2">GTL</td>
+                    <td colspan="2">RGL</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>RMS</td>
+                    <td rowspan="2">EGP</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>GC</td>
+                    <td>CDM</td>
+                    <td></td>
+                </tr>
+    </tbody>
+</table>
+    <!-- Lien vers le fichier JS de Bootstrap (pour les éléments interactifs) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pzjw8f+ua7Kw1TIq0VQjx7rMwLl4hdyHgB3y1A+9p7zRmBLz/ZWh0DK9tDpq14s7" crossorigin="anonymous"></script>
+</body>
+
+</html>
